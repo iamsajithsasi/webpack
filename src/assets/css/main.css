@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../fonts/font.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  background-color: peachpuff;
+  font-family: "MyFont";
+  font-size: 20px;
+}
+.grid {
+  display: grid;
+  transition: all 0.5s;
+  user-select: none;
+}
