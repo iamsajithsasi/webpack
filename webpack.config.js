@@ -23,14 +23,15 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           "css-loader",
-          {
-            loader: "postcss-loader",
-            options: {
-              postcssOptions: {
-                plugins: ["autoprefixer"],
-              },
-            },
-          },
+          "postcss-loader",
+          //   {
+          //     loader: "postcss-loader",
+          //     options: {
+          //       postcssOptions: {
+          //         plugins: ["autoprefixer"],
+          //       },
+          //     },
+          //   },
         ],
       }, // npm install --save-dev style-loader css-loader
       {
