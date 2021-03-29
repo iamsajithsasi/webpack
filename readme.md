@@ -2,6 +2,8 @@
 
 ### babel : npm install -D babel-loader @babel/core @babel/preset-env webpack
 
+### node_env: npm install -g win-node-env
+
 ### auto prefix css
 1. Using autoprefixer -> Update webpack with below
 ```auto prefix css

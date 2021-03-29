@@ -2,14 +2,17 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-// let mode = "development";
+let mode = "development";
+let target = "web";
 
-// if (process.env.NODE_ENV == "production") {
-//   mode = "production";
-// }
+if (process.env.NODE_ENV == "production") {
+  mode = "production";
+  target = "browserslist";
+}
 
 module.exports = {
-  //   mode: mode,
+  mode: mode,
+  target: target,
   entry: "./src/index.js", // set entry point
   output: {
     filename: "main.js",
